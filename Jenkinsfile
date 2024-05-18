@@ -12,8 +12,9 @@ pipeline {
         stage('Run Batch File') {
             steps {
                 script {
-                
+                      dir('Cloud_Task'){
                         bat 'CloudTask.bat'
+                      }
                     
                 }
             }
