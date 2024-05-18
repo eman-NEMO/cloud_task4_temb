@@ -12,9 +12,9 @@ pipeline {
         stage('Run Batch File') {
             steps {
                 script {
-                    dir('other-repo') {
+                
                         bat 'CloudTask.bat'
-                    }
+                    
                 }
             }
         }
