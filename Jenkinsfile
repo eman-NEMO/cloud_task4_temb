@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Execute Script from other Repo 2') {
             steps {
-                bat 'CloudTask.bat'  
+                dir('cloud_task4_temb') {
+                    bat 'CloudTask.bat'  
+                }
             }
         }
     }
