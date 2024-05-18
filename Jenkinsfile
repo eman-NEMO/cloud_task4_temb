@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Execute Script from Repo 1') {
             steps {
-                bat 'batch_file.bat'  // Assuming this script is a batch file to be executed on a Windows agent
+                bat 'CloudTask.bat'  // Assuming this script is a batch file to be executed on a Windows agent
             }
         }
         stage('Checkout Repo 2') {
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Execute Script from Repo 2') {
             steps {
-                bat 'list_files.bat'  
+                bat 'CloudTask.bat'  
             }
         }
     }
