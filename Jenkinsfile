@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Git Repo 1') {
-            steps {
-                git url: 'https://github.com/eman-NEMO/cloud_task4_temb.git' , branch: 'main'
-            }
-        }
+    
         stage('Execute Script from other Repo 1') {
             steps {
                 bat 'CloudTask.bat'  
